@@ -15,7 +15,7 @@ Integer pobierz;
         listMapy.put(2,"Drugi");
         listMapy.put(3,"Trzeci");
         do {
-            System.out.println("wybierz cyfre 1,2,3");
+            System.out.println("wybierz cyfre 1,2,3, przy 0 wyjdzież z apki");
             Scanner sc = new Scanner(System.in);
             pobierz = sc.nextInt();
             if (pobierz==0)
@@ -26,6 +26,7 @@ Integer pobierz;
             System.out.println(listMapy.get(pobierz));
             //System.out.println(listMapy.values());
             //System.out.println(listMapy.g);
+            System.out.println();
         }while (pobierz !=0);
     }
 }
